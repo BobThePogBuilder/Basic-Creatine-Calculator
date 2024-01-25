@@ -6,18 +6,17 @@ public class Main {
         Scanner scnr = new Scanner(System.in);
         //initializing our values
         int weight;
-        int creatine;
-        int convert_mg_to_g;
+        double creatine;
         // Prints text for the user
         System.out.print("Please Enter your weight: ");
-        //Use to calculate weight and the 14 mg per Pound of body weight
+        //Use to calculate weight and the .014 g per Pound of body weight
         /* three to five grams per day 14 mg per pound of body weight  */
         weight = scnr.nextInt();
-        creatine = 14 * weight;
-        convert_mg_to_g = creatine / 1000;
+        creatine = .014 * weight;
 
 
-        System.out.println("Your weight is " + weight + " LBs." + " We recommend you take a minimum of " + convert_mg_to_g + " gram of Creatine Daily");
+
+        System.out.println("Your weight is " + weight + " LBs." + " We recommend you take a minimum of " + creatine + " gram of Creatine Daily");
 
         /*
         Under 120 pounds: 3 grams
